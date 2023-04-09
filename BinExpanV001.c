@@ -1,5 +1,6 @@
 // This is final version bug free from Binomal Theorem
 #include <stdio.h>
+#include<conio.h>
 
 int factorial(int pwrValue);
 
@@ -16,7 +17,7 @@ int main()
         newValue = numerator / denominator;
         printf(" %d(a^%d b^%d)  +  ", newValue, pwr - i, i);
     }
-
+    getch();
     return 0;
 }
 
