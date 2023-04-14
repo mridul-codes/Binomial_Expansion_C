@@ -37,3 +37,6 @@ int factorial(int pwrValue)
         return pwrValue *= factorial(pwrValue - 1);
     }
 }
+
+
+//The program is limitted to 33 input value
