@@ -2,23 +2,23 @@
 #include <stdio.h>
 #include<conio.h>
 
-double factorial(int pwrValue);
+int factorial(int pwrValue);
 
 int main()
 {
-    double pwr, newValue, numerator, denominator;
+    int pwr, newValue, numerator, denominator;
     printf("\nEnter the power of (a+b) : ");
-    scanf("%lf", &pwr);
+    scanf("%d", &pwr);
 
-    for (double i = 0; i <= pwr; i++)
+    for (int i = 0; i <= pwr; i++)
     {
-        double condition = pwr -i;
+        int condition = pwr -i;
         numerator = factorial(pwr);
         denominator = factorial(pwr - i) * factorial(i);
         newValue = numerator / denominator;
-        printf(" %.2lf",newValue);
-        printf("a^%.2lf",pwr -i);
-        printf("b^%.2lf",i);
+        printf(" %d",newValue);
+        printf("a^%d",pwr -i);
+        printf("b^%d",i);
         (condition==0 && i==pwr)?printf("\n***End of the Expansion***"):printf(" + "); //Condition applied to remove the plus sign at the end
         //printf(" %d(a^%d b^%d)  +  ", newValue, pwr - i, i);              //verson 001 update
     }
@@ -26,7 +26,7 @@ int main()
     return 0;
 }
 
-double factorial(int pwrValue)
+int factorial(int pwrValue)
 {
     if (pwrValue == 0 || pwrValue < 0)
     {

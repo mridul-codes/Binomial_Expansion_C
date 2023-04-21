@@ -1,3 +1,6 @@
 The program is limitted to 33 input value. If enterd larger no. the program doesnot execute or run very slow rate.
 Reason: The program will was abruptly closing because, the input was in integer: as a result higher power.
 Solved: The input and output are converted into double for larger 8bit values
+
+
+New error encountured : The answers aren't correct
